@@ -1,0 +1,19 @@
+body{
+    background-color: var(--background-main-color);
+}
+
+div{
+    text-align: center;
+    margin-top: 80px;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+a{
+    color: var(--main-color) !important;
+    font-style: italic;
+}
+

@@ -1,0 +1,65 @@
+:root{
+    /* Variables */
+    --main-color: #3564ad;
+    --dark-main-color: #2f5a9b;
+    --background-main-color: #eaeff6;
+    --secondary-color: #ffcb05;
+    --dark-secondary-color: #e5b604;
+    --background-color: #ebeced;
+}
+
+body{
+    font-family: monospace;
+    background-color: var(--background-main-color);
+}
+
+#loginLogo{
+    position: absolute;
+    top: 20px;
+    left: 40vw;
+    width: 20vw;
+    height: 100px;
+}
+
+#loginDiv{
+    height: auto;
+    width: 100%;
+}
+
+#loginHelp{
+    margin-top: 400px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: red;
+}
+
+#loginForm{
+    position: absolute;
+    top: 470px;
+    left: 38vw;
+    text-align: center;
+}
+
+#registerForm{
+    position: absolute;
+    top: 185px;
+    left: 38vw;
+    text-align: center;
+}
+
+.submitButton {
+    position: relative;
+    top: 40px;
+}
+
+.changeLoginRegister{
+    font-size: 1.02rem;
+    text-align: center;
+    margin-top: 70px;
+    color: var(--main-color);
+}
+
+.changeLoginRegister:hover{
+    cursor: pointer;
+    color: var(--dark-main-color);
+}

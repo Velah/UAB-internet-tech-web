@@ -1,0 +1,14 @@
+#editUserProfileDiv{
+    margin-top: 40px;
+}
+
+#editUserProfileDiv span{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 3vw;
+    width: 12vw;
+}
+
+#editUserProfileButton{
+    margin-top: 20px;
+}

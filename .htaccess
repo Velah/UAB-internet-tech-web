@@ -1,0 +1,18 @@
+AuthType Basic
+AuthName "Entrar usuari i contrasenya"
+AuthUserFile /tdiw/tdiw-b5/public_html/.htpasswd
+Require valid-user
+
+RewriteEngine on
+RewriteBase /~tdiw-b5/
+DirectoryIndex index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#Next 2 lines allow mod_rewrite to detect AJAX
+RewriteCond %{HTTP:X-Requested-With} !=XMLHttpRequest
+RewriteCond %{HTTP:X-REQUESTED-WITH} !^(XMLHttpRequest)$
+
+RewriteRule ^categories/([a-zA-z]+)/$ index.php?action=list&category=$1
+RewriteRule ^products/([0-9]+)/$ index.php?action=product&productID=$1
+RewriteRule ^login/$ index.php?action=login

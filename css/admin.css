@@ -1,0 +1,89 @@
+#adminTools{
+    margin-top: 100px;
+}
+
+.adminTool span{
+    font-size: 1.5rem;
+    padding: 0.5vh 1vw;
+    border: 2px solid rgba(53, 100, 173, 0);
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 6px 5px 0 rgba(53, 100, 173, 0.5);
+    transition: border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.adminTool span:hover{
+    border: 2px solid rgba(53, 100, 173, 0.75);
+    box-shadow: 2px 6px 15px rgba(53, 100, 173, 0.25);
+}
+
+#longDescInput{
+    width: 24vw;
+    height: 80px;
+    font-size: 1.3rem;
+}
+
+#newProductSelectCategory{
+    width: 25vw;
+}
+
+#ordersListDiv, #editProductsDiv, #editProductsEditDiv, #newProductHelp, #newProductForm, .adminTool{
+    margin-top: 40px;
+}
+
+.ordersListSingleOrder, .editProductsSingleProduct{
+    margin: 30px 0;
+}
+
+.ordersListSingleOrderText, .editProductsSingleProductText{
+    display: inline-block;
+    width: 50vw;
+    margin-right: 4vw;
+    font-size: 1.5rem;
+    padding: 0.5vh 1vw;
+    border: 2px solid rgba(53, 100, 173, 0);
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 6px 5px 0 rgba(53, 100, 173, 0.5);
+    transition: border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.ordersListSingleOrderText:hover, .editProductsSingleProductText:hover{
+    border: 2px solid rgba(53, 100, 173, 0.75);
+    box-shadow: 2px 6px 15px rgba(53, 100, 173, 0.25);
+}
+
+.editProductsEditButton, .editProductsDeleteButton{
+    height: 40px;
+    width: 6vw;
+}
+
+.editProductsEditButton:hover, .editProductsDeleteButton:hover{
+    width: 8vw;
+}
+
+.editProductsDeleteButton{
+    background-color: red;
+}
+
+.editProductsDeleteButton:hover{
+    background-color: darkred;
+}
+
+#editProductsEditForm span{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 4vw;
+    width: 12vw;
+}
+
+#originalNameInput{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}

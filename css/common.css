@@ -1,0 +1,227 @@
+:root{
+    /* Variables */
+    --main-color: #3564ad;
+    --dark-main-color: #2f5a9b;
+    --background-main-color: #eaeff6;
+    --hover-main-color: #e2e9f7;
+    --secondary-color: #ffcb05;
+    --dark-secondary-color: #e5b604;
+    --background-color: #ebeced;
+}
+
+body{
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+textarea{
+    vertical-align: middle;
+}
+
+#navCategories{
+    position: fixed;
+    background-color: white;
+    left: 0;
+    top: 80px;
+    height: 100%;
+    width: 12.5vw;
+    min-width: 150px;
+    box-shadow: 0.25vw 0 0.5vh rgba(53, 100, 173, 0.5);
+    z-index: 9;
+}
+
+#categoriesList{
+    list-style-type: none;
+    padding: 0;
+}
+
+.categoryImg{
+    height: 25px;
+    width: 2vw;
+    min-width: 25px;
+    float: left;
+    margin-right: 1vw;
+}
+
+.category{
+    font-size: 1rem;
+    padding: 10px 1vw 10px 1vw;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+.category:hover{
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+#productSection{
+    position: absolute;
+    left: 12.5vw;
+    top: 80px;
+    width: 87.5vw;
+    text-align: center;
+}
+
+.product{
+    display: inline-block;
+    width: 15vw;
+    min-width: 250px;
+    height: 350px;
+    margin: 30px 0.1vw 10px 0.3vw;
+    cursor: pointer;
+    border: 2px solid rgba(53, 100, 173, 0);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 6px 15px 0 rgba(53, 100, 173, 0.5);
+    transition: border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.product:hover{
+    border: 2px solid rgba(53, 100, 173, 0.75);
+    box-shadow: 2px 6px 15px rgba(53, 100, 173, 0.25);
+}
+
+.product-img{
+    margin-top: 5%;
+    height: 50%;
+    width: 55%;
+}
+
+.product-name{
+    text-align: center;
+    font-size: 1.75rem;
+    margin-top: 8px;
+}
+
+.product-price{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.submitButton{
+    height: 60px;
+    width: 20vw;
+    border: none;
+    cursor: pointer;
+    background-color: var(--main-color);
+    border-radius: 4px;
+    font-size: 20px;
+    color: white;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.submitButton:hover{
+    background-color: var(--dark-main-color);
+    width: 24vw;
+}
+
+.formInput{
+    height: 55px;
+    width: 24vw;
+    margin-bottom: 20px;
+    align-content: center;
+    vertical-align: middle;
+    border: 1px solid #b8b8b8;
+    border-radius: 4px;
+    background-color: var(--background-color);
+    font-size: 1.05rem;
+    padding-left: 1vw;
+}
+
+.formInput:focus{
+    outline-color: rgba(0,0,0,1);
+    outline-style: auto;
+    outline-width: 0;
+    outline-offset: 0;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0.45vw 0.75vh 5px rgba(255, 203, 5, 0.25);
+    background-color: white;
+}
+
+.inputFile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputFile + label {
+    font-size: 1.25rem;
+    width: 10vw;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.inputFile:focus + label,
+.inputFile + label:hover {
+    background-color: var(--dark-main-color);
+    width: 14vw;
+}
+
+.help{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.help span{
+    font-size: 1.5rem;
+    color: red;
+}
+
+@media (min-width: 1440px){
+    #navCategories{
+        width: 14vw;
+    }
+
+    #productSection{
+        width: 86vw;
+        left: 14vw;
+    }
+
+    .product{
+        width: 18.5vw;
+    }
+
+    .product-name{
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+
+    .product-price{
+        font-size: 1.75rem;
+    }
+
+    .product-short-description{
+        font-size: 1.15rem;
+        margin-top: 10%;
+    }
+
+    .category{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px){
+    #menuIcon{
+        display: none;
+    }
+
+    #logo{
+        left: 5vw;
+    }
+}

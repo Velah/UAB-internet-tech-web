@@ -1,0 +1,62 @@
+#ordersDiv{
+    margin-top: 100px;
+}
+
+.order{
+    margin: 40px 0;
+}
+
+.order span{
+    display: inline-block;
+    width: 50vw;
+    font-size: 1.5rem;
+    padding: 0.5vh 1vw;
+    border: 2px solid rgba(53, 100, 173, 0);
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 6px 5px 0 rgba(53, 100, 173, 0.5);
+    transition: border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.order span:hover{
+    border: 2px solid rgba(53, 100, 173, 0.75);
+    box-shadow: 2px 6px 15px rgba(53, 100, 173, 0.25);
+}
+
+#singleOrder{
+    margin-top: 40px;
+}
+
+.singleOrderProduct{
+    margin: 10px 0;
+}
+
+.singleOrderProductName{
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.singleOrderProductName:hover{
+    color: var(--main-color);
+}
+
+.singleOrderProductQuantity{
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.singleOrderProductPrice{
+    font-size: 1.7rem;
+}
+
+#singleOrderTotalPrice{
+    margin-top: 50px;
+}
+
+#singleOrderTotalPrice span{
+    font-size: 2.2rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 0.5vh 1vw;
+}
